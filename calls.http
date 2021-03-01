@@ -1,0 +1,97 @@
+###users login
+### login user
+POST  http://localhost:5000/users/login
+content-type: application/json
+
+{
+    "email": "vishal@gmail.com",
+    "password": "123456"
+}
+
+### update user
+POST  http://localhost:5000/users/refresh-token
+content-type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MTM3NzY3OTIsImV4cCI6MTY0NTMzNDM5MiwiYXVkIjoiNjAzMDM3Nzg0NTVlNWEyNjQ4OGE3NTA5IiwiaXNzIjoiZGVtby5jb20ifQ.ud2t5L21S1cjq1dVkPHIwxAa6Wuk5K7akJj95J3nLZM"
+}
+
+###get all users
+GET http://localhost:5000/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MTQ2MTc2MDAsImV4cCI6MTYxNDYxODEwMCwiYXVkIjoiNjAzN2FhYzEyZDFiMDIxZGE4ZDU5YjczIiwiaXNzIjoiZGVtby5jb20ifQ.mC09x10U8rtEqa44ATSSOK07sZIvAMmPCaZQ7T5b2vk
+
+###
+GET http://localhost:5000/users/603640b671a4603ab8d37ec4
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MTQ2MTY3MzksImV4cCI6MTYxNDYxNzIzOSwiYXVkIjoiNjAzN2FhYzEyZDFiMDIxZGE4ZDU5YjczIiwiaXNzIjoiZGVtby5jb20ifQ.VnWMN7iQ7x4aNCIcSO-5BvJM07GBSJq1Sa8I_P1wJ0s
+
+###create users
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+  "email":"vishal@gmail.com",
+  "password":"123456"
+}
+
+###
+PATCH http://localhost:5000/users/4535456464
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MTQ2MTY3MzksImV4cCI6MTYxNDYxNzIzOSwiYXVkIjoiNjAzN2FhYzEyZDFiMDIxZGE4ZDU5YjczIiwiaXNzIjoiZGVtby5jb20ifQ.VnWMN7iQ7x4aNCIcSO-5BvJM07GBSJq1Sa8I_P1wJ0s
+
+###
+DELETE http://localhost:5000/users/4535456464
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MTQ2MTY3MzksImV4cCI6MTYxNDYxNzIzOSwiYXVkIjoiNjAzN2FhYzEyZDFiMDIxZGE4ZDU5YjczIiwiaXNzIjoiZGVtby5jb20ifQ.VnWMN7iQ7x4aNCIcSO-5BvJM07GBSJq1Sa8I_P1wJ0s
+
+###Blog Routes
+###
+GET http://localhost:5000/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MTQ2MTY3MzksImV4cCI6MTYxNDYxNzIzOSwiYXVkIjoiNjAzN2FhYzEyZDFiMDIxZGE4ZDU5YjczIiwiaXNzIjoiZGVtby5jb20ifQ.VnWMN7iQ7x4aNCIcSO-5BvJM07GBSJq1Sa8I_P1wJ0s
+
+###
+GET http://localhost:5000/blogs/603b388737672e25fc4a9df7
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MTQ2MTY3MzksImV4cCI6MTYxNDYxNzIzOSwiYXVkIjoiNjAzN2FhYzEyZDFiMDIxZGE4ZDU5YjczIiwiaXNzIjoiZGVtby5jb20ifQ.VnWMN7iQ7x4aNCIcSO-5BvJM07GBSJq1Sa8I_P1wJ0s
+
+###
+POST http://localhost:5000/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MTQ2MTY3MzksImV4cCI6MTYxNDYxNzIzOSwiYXVkIjoiNjAzN2FhYzEyZDFiMDIxZGE4ZDU5YjczIiwiaXNzIjoiZGVtby5jb20ifQ.VnWMN7iQ7x4aNCIcSO-5BvJM07GBSJq1Sa8I_P1wJ0s
+
+{
+  "userid":"603640b671a4603ab8d37ec4",
+  "title":"this is dummy blogs"
+}
+
+###
+POST http://localhost:5000/categories
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MTQ2MTY3MzksImV4cCI6MTYxNDYxNzIzOSwiYXVkIjoiNjAzN2FhYzEyZDFiMDIxZGE4ZDU5YjczIiwiaXNzIjoiZGVtby5jb20ifQ.VnWMN7iQ7x4aNCIcSO-5BvJM07GBSJq1Sa8I_P1wJ0s
+
+{
+  "cat_title":"science"
+}
+
+###
+POST http://localhost:5000/users/mailer
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MTQ2MTgxMTUsImV4cCI6MTYxNDYxODYxNSwiYXVkIjoiNjAzN2FhYzEyZDFiMDIxZGE4ZDU5YjczIiwiaXNzIjoiZGVtby5jb20ifQ.c5vba9csYDTDVCO11yWnFhqnaAQ8WX0gfh7EEsDA30A
+
+{
+  "email":"vivekmethew8@gmail.com",
+  "subject":"this is testing mail",
+  "emailtxt":"Are schedules your program assissment tomorrow,Are schedules your program assissment tomorrow,Are schedules your program assissment tomorrow,Are schedules your program assissment tomorrow"
+}
+
+###
+PATCH http://localhost:5000/blogs/4535456464
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MTQ2MTY3MzksImV4cCI6MTYxNDYxNzIzOSwiYXVkIjoiNjAzN2FhYzEyZDFiMDIxZGE4ZDU5YjczIiwiaXNzIjoiZGVtby5jb20ifQ.VnWMN7iQ7x4aNCIcSO-5BvJM07GBSJq1Sa8I_P1wJ0s
+
+###
+DELETE http://localhost:5000/blogs/603b388737672e25fc4a9df7
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MTQ2MTY3MzksImV4cCI6MTYxNDYxNzIzOSwiYXVkIjoiNjAzN2FhYzEyZDFiMDIxZGE4ZDU5YjczIiwiaXNzIjoiZGVtby5jb20ifQ.VnWMN7iQ7x4aNCIcSO-5BvJM07GBSJq1Sa8I_P1wJ0s
