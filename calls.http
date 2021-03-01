@@ -31,7 +31,7 @@ POST http://localhost:5000/users
 Content-Type: application/json
 
 {
-  "email":"vishal@gmail.com",
+  "email":"vivekmethew8@gmail.com",
   "password":"123456"
 }
 
