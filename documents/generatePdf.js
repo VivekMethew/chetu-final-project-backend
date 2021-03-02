@@ -34,34 +34,10 @@ module.exports = {
     generatePdf: () => {
         var docDefinition = {
             content: [
-                { text: 'First paragraph', fontSize: 25, alignment: 'center' },
-                'Another paragraph, this time a little bit longer to make sure, this line will be divided into at least two lines',
-                {
-                    columns: [{
-                            // auto-sized columns have their widths based on their content
-                            width: 'auto',
-                            text: 'First column'
-                        },
-                        {
-                            // star-sized columns fill the remaining space
-                            // if there's more than one star-column, available width is divided equally
-                            width: '*',
-                            text: 'Second column'
-                        },
-                        {
-                            // fixed width
-                            width: 100,
-                            text: 'Third column'
-                        },
-                        {
-                            // % width
-                            width: '20%',
-                            text: 'Fourth column'
-                        }
-                    ],
-                    // optional space between columns
-                    columnGap: 10
-                }
+                { text: 'Welcome To eShare Final Assissment ', fontSize: 25, alignment: 'center', lineHeight: 2 },
+                { text: 'Hello, Sir ', fontSize: 18 },
+                { text: 'I am submitted my final assissment of given time and Thanks for give me task , So i am finally done my project ', fontSize: 18 },
+                { text: 'Thanks Chetu India, Noida ', fontSize: 22, alignment: 'center', lineHeight: 2 },
             ],
             defaultStyle: {
                 font: 'Helvetica'

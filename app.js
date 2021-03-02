@@ -9,7 +9,7 @@ const app = express()
 // port
 const PORT = process.env.PORT || 5000
 
-// require('./documents/generatePdf').generatePdf()
+require('./documents/generatePdf').generatePdf()
 
 
 
